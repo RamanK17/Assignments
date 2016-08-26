@@ -1,0 +1,284 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Brad Hussey
+Updated: August 2013
+Notes:	 Hand coded for Udemy.com
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+  
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+body{
+background-color: pink;
+
+background-size: 100%;
+}   
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+ .navbar-default {
+    background-color: rgb(250,50,150);
+    border-color: #030033;
+    background-width:100%;
+}
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 55px;
+padding-bottom: 10px;
+}
+.forms{
+align:center;
+font-size: 35px;
+margin-top:8px;
+}
+#label{
+ font-size: 40px;  
+}
+/*#title{
+    font-size: 35px;
+}
+*/
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 38px;
+text-align: center;
+text-orientation: center;
+}
+.search-input{
+   width: 80%;
+}
+
+}
+@media (max-width: 1440px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 59px;
+padding-bottom:8px;
+}
+.forms{
+margin: auto;
+align-content: center;
+font-size: 34px;
+margin-top:9px;
+}
+#label{
+ font-size: 37px;  
+}
+/*#title{
+    font-size: 34px;
+}*/
+
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 32px;
+text-align: center;
+text-orientation: center;
+}
+.search-input{
+   width: 80%;
+}
+}
+@media (max-width: 1024px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 50px;
+padding-bottom:8px;
+}
+.forms{
+margin: auto;
+align-content: center;
+font-size: 30px;
+margin-top:7px;
+}
+#label{
+ font-size: 35px;  
+}
+/*#title{
+    font-size: 30px;
+}*/
+
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 35px;
+text-align: center;
+text-orientation: center;
+}
+.search-input{
+   width: 70%;
+}
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+ .heading{
+   text-align: center;
+   font-family: 'Lobster', sans-serif;
+   font-size: 40px;
+   padding-bottom: 10px;
+}
+
+.myforms{
+ 
+    margin: auto;
+    align-content: center;
+   font-size: 22px;
+   margin-top:9px;
+}
+#label{
+ font-size: 24px;  
+}
+/*#title{
+   font-size: 22px;
+}*/
+.search-input{
+   width: 70%;
+}
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 21px;
+text-align: center;
+text-orientation: center;
+}
+#table th{
+   padding-bottom:15px; 
+}
+
+}
+@media (max-width: 480px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 28px;
+padding-bottom: 6px;
+}
+.myforms{
+margin: auto;
+align-content: center;
+font-size: 13px;
+margin-top:6px;
+}
+.search-input{
+   width: 74%;
+}
+/*#title{
+font-size: 15px;
+}*/
+#label{
+ font-size: 16px;  
+}
+
+#table{
+align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 15px;
+text-align: center;
+text-orientation: center;
+}
+
+}
+/* Portrait & landscape phone */
+@media (max-width: 320px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 25px;
+padding-bottom: 3px;
+}
+.search-input{
+   width: 63%;
+}
+
+.myforms{
+margin: auto;
+align-content: center;
+font-size: 11px;
+margin-top:5px;
+}
+
+#label{
+ font-size: 14px;  
+}
+
+/*#title{
+   font-size: 11px;
+}*/
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 11px;
+text-align: center;
+text-orientation: center;
+}   
+   
+}
+@media (max-width: 285px) {
+.heading{
+text-align: center;
+font-family: 'Lobster', sans-serif;
+font-size: 25px;
+padding-bottom: 3px;
+}
+.search-input{
+   width: 63%;
+}
+
+.forms{
+/*margin: auto;*/
+align-content: center;
+font-size: 11px;
+margin-top:5px;
+}
+
+#label{
+ font-size: 14px;  
+}
+
+/*#title{
+   font-size: 11px;
+}*/
+
+#table{
+   align-content: center;
+font-family: 'Philosopher', sans-serif;
+font-size: 16px;
+text-align: center;
+text-orientation: center;
+}   
+   
+}
+
