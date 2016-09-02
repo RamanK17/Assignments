@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+
+		<!-- Website Title & Description for Searc
+		h Engine purposes -->
+		<title>Employee Data</title>
+		<meta name="description" content="">
+		
+		<!-- Mobile viewport optimized -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+		
+		<!-- Bootstrap CSS -->
+
+		<link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+		<link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Philosopher:400,700" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+		<!-- Custom CSS -->
+		<link href="includes/css/style.css" rel="stylesheet">
+		<!-- Include Modernizr in the head, before any other Javascript -->
+		
+	</head>
+
+	<body>
+       <div class="container-fluid">
+           <h1 class="heading">Employee Records</h1>
+
+           <p>    
+                <form class="forms">
+                  <label id="label">Employee Id:</label>
+                  <input type="text" id="ids" placeholder="Search by Id" class="search-input">
+                  <input type="button" value="Search" id="searchBtn" >
+                </form>
+
+                <h4 class="click"> Click on the button to load data</h4>
+           </p>
+            
+            <div class="span4 offset4 text-center">
+                <button id = "viewAll" align="center" >View All</button>
+            </div>
+            <div  style="height:90px">    
+                <button name="Add" class="btn-success"  data-target="#iModal" data-toggle="modal" id="addBtn" align="center">Add new</button>
+            </div>    
+        </div>
+
+<div class="table-responsive"> 
+   <table class="table table-striped " id="table" >
+      <thead>
+        <tr id="header">
+           <th>Id</th>
+           <th>Name</th>
+           <th>Age</th>
+           <th>Gender</th>
+           <th>Company</th>
+           <th>Email</th>
+           <th>Contact No.</th>
+           <th>Operations</th>
+       </tr>
+   </thead>
+   <tbody id="tbodyid">
+
+   </tbody>
+</table>
+</div>     
+
+<div class="modal fade" id="iModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal">&times;</button>
+            <h4 class="modal-title" id="titleModal">Add Details</h4>
+            <h4 class="modal-title" id="updateTitle">Update Details</h4>
+        </div><!--end modal-header -->
+
+        <div class="modal-body" id="modal">
+          <form class="form-horizontal">
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Name</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputFirstName" placeholder="Employee Name" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-2 control-label" >Age</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputAge" pattern="[0-9]" type="number">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-2 control-label">Gender</label>
+                <div class="col-lg-10">
+                    <input class="form-control" type="text" placeholder="Male/Female" id="select" >
+
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputName">Company</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputCompany" type="text">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputEmail">Email</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputEmail" type="email">
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label class="col-lg-2 control-label" for="inputNumber">Phone No.</label>
+                <div class="col-lg-10">
+                    <input class="form-control" id="inputNo" type="tel" maxlength="10" minlength="10">
+                </div>
+            </div> 
+
+        </form>
+    </div><!-- end modal-body -->
+
+    <div class="modal-footer">
+        <button class="btn btn-default" data-dismiss="modal" type="button" data-dismiss="modal" id="closeBtn">Close</button> 
+        <button class="btn btn-default" data-dismiss="modal" type="button" data-dismiss="modal" id="cancelBtn">Cancel</button> 
+
+        <input type="submit" value="Submit" class="btn btn-success"  id="saveBtn">
+
+        <button type="submit" class="btn btn-success"  id="updateBtn" data-id="updt"><i class="glyphicon glyphicon-ok"></i>Update</button>
+    </div><!-- end modal-footer -->
+
+</div><!-- end modal-content -->
+</div><!-- end modal-dialog -->
+</div><!-- end myModal -->
+
+<div id="page">
+    <div class="item"></div>     
+    <div id="scroll" style="display:none;"></div>
+</div> 
+
+<script src="includes/js/modernizr-2.6.2.min.js"></script>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script src="includes/js/employee.js"></script>
+<script src="bootstrap/js/bootstrap.min.js"></script>
+
+</body>
+</html>
