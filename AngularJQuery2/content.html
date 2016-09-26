@@ -1,0 +1,14 @@
+<div layout-wrap  layout="row">
+	<md-content id="content" flex>
+		<div layout="row" layout-align="end" id="input">
+			<md-input-container >
+				<label>Search by Id/All </label>
+				<input type="text" ng-model="empid" id="title">
+			</md-input-container>
+			<a href="#/searchDetails/{{empid}}"><md-button class="md-fab md-mini">
+			<md-icon md-svg-src="images/svg/search.svg"></md-icon>
+			</md-button></a>
+		</div>
+		<div ui-view="content"></div>
+	</md-content>  
+</div>

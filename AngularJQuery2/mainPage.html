@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html ng-app="myApp" >
+<head>
+	<!-- Website Title & Description for Search Engine purposes -->
+	<title>Employee Data</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- Angular Material style sheet -->
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Philosopher:400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet">
+	<!-- Custom CSS -->
+	   <link href="css/style.css" rel="stylesheet">        
+<!-- 	<link href="css/s.css" rel="stylesheet"> -->
+</head>
+<body  ng-controller="BarCtrl">
+	<md-toolbar class="md-hue-2" style="position:fixed" >
+	  <div class="md-toolbar-tools" >
+		<md-button class="md-icon-button" aria-label="Side Panel" ng-click="openSideNavPanel()">
+		<md-icon md-svg-icon="images/svg/menu-1.svg"></md-icon>
+		</md-button>
+		<h1>
+		  <span>Employees Record</span>
+		</h1>
+		<span flex></span>
+		<md-icon md-svg-icon="images/svg/user-3.svg"></md-icon>
+		<md-button class="md-raised md-primary md-hue-1" aria-label="Login">Login</md-button>
+	  </div>
+	</md-toolbar>
+	<md-sidenav class="md-sidenav-left md-whiteframe-z2" md-component-id="left" >
+		<md-toolbar layout="row">
+		 <div class="md-toolbar-tools">
+			<h2>
+			  <span>Employees Record</span>
+			</h2>
+			<span flex></span>
+			<md-button class="md-icon-button" aria-label="Close Side Panel" ng-click="closeSideNavPanel()">
+			  <md-tooltip>Close Side Panel</md-tooltip>
+			  <md-icon md-svg-src="images/svg/error.svg"></md-icon>
+			</md-button>
+		   </div>
+		</md-toolbar> 
+		<md-list ng-click="closeSideNavPanel()">
+		 <md-list-item>
+			<a href="home" ><md-icon md-svg-src="images/svgNew/home.svg" ></md-icon>
+			<p >Home</p></a>
+		  </md-list-item>
+		  <md-list-item>
+		  <a href="#/addEmployeeDetails"> <md-icon md-svg-src="images/svgNew/add-user.svg"></md-icon>
+		   <p >Add Employee Details</p></a>
+		  </md-list-item>
+		  <md-list-item>
+			<a ui-sref="viewEmployeeDetails"><md-icon md-svg-src="images/svgNew/eye.svg"></md-icon>
+			<p >View All records</p></a>
+		  </md-list-item>
+		  <md-divider></md-divider>
+		  <md-subheader class="md-no-sticky">Create Account</md-subheader>
+		  <md-list-item>
+			<!-- <md-icon md-svg-icon="images/svg/avatar.svg"></md-icon>
+			<md-icon md-svg-icon="images/svg/avatar-1.svg"></md-icon> -->
+			<md-icon md-svg-icon="images/svg/users-1.svg"></md-icon>
+			<md-button class="md-raised md-primary" aria-label="SignUp">Sign Up</md-button>
+		  </md-list-item>
+	 	</md-list>
+	</md-sidenav>
+	<md-subheader class="md-primary"></md-subheader>		
+	<div layout-wrap  layout="row">
+		<md-content id="content" flex>
+		  <div layout="row" layout-align="end" id="input">
+				<md-input-container >
+					<label>Search by Id/All </label>
+					<input type="text" ng-model="empid" id="title">
+				</md-input-container>
+				<a href="#/searchDetails/{{empid}}"><md-button class="md-fab md-mini">
+				<md-icon md-svg-src="images/svg/search.svg"></md-icon>
+				</md-button></a>
+		 </div>
+	 		<div ui-view></div>
+        </md-content>  
+		</div>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular.min.js"></script>
+	<script src="//cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.8/angular-ui-router.min.js"></script>
+	<!-- <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular-route.js"></script> -->
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-animate.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-aria.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.5.5/angular-messages.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/angular_material/1.1.0/angular-material.min.js"></script>
+	<script src="bower_components/angularUtils-pagination/dirPagination.js"></script>
+	<!-- <script src="js/module.js"></script> -->
+
+	<script src="js/barController.js"></script> 
+	<!-- <script src="js/addDialog.js"></script> -->
+	<script src="js/employeeFactory.js"></script> 
+	<script src="js/employeeController.js"></script>
+	
+	<script src="js/config.js"></script>
+	
+	
+	
+	
+</body>
+</html>

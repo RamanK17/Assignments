@@ -1,0 +1,32 @@
+<div ng-cloak="">
+  <md-content class="md-padding" >
+	<div  layout="row" layout-wrap layout-align="start">
+	  <md-card flex-xs="80" flexs-sm="80" flex="30" id="mainCards">  
+		<md-card-content >	
+			<span class="md-headline"><strong>Employee Id:{{details.id}}</strong></span><br><br>
+			<strong>Name</strong> :{{details.name}}<br>
+			<strong>Age</strong>  :{{details.age}}<br>
+			<strong>Gender</strong>:{{details.gender}}<br>
+			<strong>Company</strong> :{{details.company}}<br>
+			<strong>Email</strong>  :{{details.email}}<br>
+			<strong>Contact No.</strong>  :{{details.phone}}<br>
+		</md-card-content>
+		<md-card-actions layout="row" layout-align="end center">
+		<p>
+		   <md-icon ui-sref="#/employeeEditdetails/{{details.id}}" md-svg-src="images/svg/edit.svg"></md-icon>
+		   <md-icon ui-sref="#/employeeDeletedetails/{{details.id}}" md-svg-src="images/svg/trash.svg"></md-icon>
+		</p>
+		</md-card-actions>
+	  </md-card>   
+ </div>  
+ <!-- <div ng-cloak="">
+  <md-content class="md-padding" >
+	<div  layout="row" layout-wrap layout-align="center">
+	  <md-card flex-xs="80" flexs-sm="80" flex="30">  
+			<md-card-content >	
+				<strong>Employee Details Added Successfully !!</strong>
+			</md-card-content>
+		</md-card>	
+	</div>
+  </md-content>
+ </div> 		 -->

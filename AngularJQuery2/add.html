@@ -1,0 +1,196 @@
+<!-- <div ng-App="myApp" layout="column" ng-cloak>
+
+  <md-content layout-padding>
+    <form name="userForm">
+      <div layout="row" layout-xs="column" layout-sm="column" layout-align="start end">
+        <md-input-container>
+          <md-switch ng-model="showHints">Showing {{showHints ? "Hints" : "Errors"}}</md-switch>
+        </md-input-container>
+      </div>
+
+      <div layout-gt-sm="row">
+
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Name</label>
+          <input md-maxlength="30" required name="name" ng-model="user.name" />
+
+          <div class="hint" ng-if="showHints">Tell us what we should call you!</div>
+
+          <div ng-messages="userForm.name.$error" ng-if="!showHints">
+            <div ng-message="required">Name is required.</div>
+            <div ng-message="md-maxlength">The name has to be less than 30 characters long.</div>
+          </div>
+        </md-input-container>
+
+        <div flex="5" hide-xs hide-sm>
+          <!Spacer //-->
+        <!-- </div>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Age</label>
+          <input md-maxlength="2" required name="age" ng-model="user.age" />
+
+          <div class="hint" ng-if="showHints">How old are u?</div>
+
+          <div ng-messages="userForm.age.$error" ng-if="!showHints">
+            <div ng-message="required">Age is required.</div>
+            <div ng-message="md-maxlength">The age has to be between 16 to 99 yrs</div>
+          </div>
+        </md-input-container> --> 
+
+      <!-- <div flex="5" hide-xs hide-sm> -->
+          <!-- Spacer //-->
+     <!--   </div> -->
+<!-- </div>
+     <div layout-gt-sm="row">
+       <md-input-container class="md-block" flex-gt-sm>
+          <label>Gender</label>
+          <input md-maxlength="6" required name="gender" ng-model="user.gender" />
+
+          <div class="hint" ng-if="showHints">Your Gender!</div>
+
+          <div ng-messages="userForm.gender.$error" ng-if="!showHints">
+            <div ng-message="required">Gender is required.</div>
+            <div ng-message="md-maxlength">Gender cannot be other than Male or Female.</div>
+          </div>
+        </md-input-container>
+
+        <div flex="5" hide-xs hide-sm> -->
+          <!-- Spacer //-->
+       <!--  </div>
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Company</label>
+          <input md-maxlength="50" required name="company" ng-model="user.company" />
+
+          <div class="hint" ng-if="showHints">In which Company you are working?</div>
+
+          <div ng-messages="userForm.company.$error" ng-if="!showHints">
+            <div ng-message="required">Company is required.</div>
+            <div ng-message="md-maxlength">The Company Name is to be provided</div>
+          </div>
+        </md-input-container>
+
+      <div flex="5" hide-xs hide-sm>
+          <!Spacer //-->
+      <!--  </div>
+</div>
+      <div layout-gt-sm="row">
+
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Email</label>
+          <input name="email" ng-model="user.email"
+                 required minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+          <div class="hint" ng-show="showHints">How can we reach you?</div>
+
+          <div ng-messages="userForm.email.$error" ng-hide="showHints">
+            <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+              Your email must be between 10 and 100 characters long and look like an e-mail address.
+            </div>
+          </div>
+        </md-input-container>
+
+        <div flex="5" hide-xs hide-sm> -->
+          <!-- Spacer //-->
+       <!--  </div>
+
+        <md-input-container class="md-block" flex-gt-sm>
+          <label>Phone Number</label>
+          <input name="phone" ng-model="user.phone" required minlength="10" maxlength="10" ng-pattern="/^[-9]{10}$/"> -->
+          <!-- [(][0-9]{3}[)] [0-9]{3}-[0-9]{4}$ -->
+          <!-- <div class="hint" ng-show="showHints">How can we contact you?</div>
+          <div ng-messages="userForm.phone.$error" ng-hide="showHints">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">########## - Please enter a valid phone number.</div>
+          </div>
+        </md-input-container>
+        <style>
+          body[dir=rtl] .hint {
+            right: 2px;
+            left: auto;
+          }
+        </style>
+      </div>
+      <div>
+        <md-button type="submit">Submit</md-button>
+      </div>
+    </form>
+  </md-content>
+</div>
+ -->
+
+
+ <div layout="column" ng-cloak>
+  <md-content class="md-no-momentum" layout-padding>
+    <form name="userForm">
+      <md-input-container class="md-icon-float md-block">
+        <label>Name</label>
+        <md-icon md-svg-src="images/svg/user.svg" class="name"></md-icon>
+        <input md-maxlength="30" required  name="name" ng-model="name" type="text"/>
+        <div ng-messages="userForm.name.$error">
+          <div ng-message="required">Name is required.</div>
+          <div ng-message="md-maxlength">The name must be less than 30 characters long.</div>
+        </div>
+      </md-input-container>
+
+      <div layout="row">
+        <md-input-container flex="50">
+          <label>Age</label>
+          <md-icon md-svg-src="images/svg/age.svg" class="age"></md-icon>
+          <input required name="age" ng-model="age" type="number" />
+          <div ng-messages="userForm.age.$error">
+            <div ng-message="required">Age is required.</div>
+            <!-- <div ng-message="md-maxlength">The age has to be between 16 to 99 yrs</div> -->
+          </div>
+        </md-input-container>
+
+        <md-input-container flex="50">
+          <label>Gender</label>
+          <md-icon md-svg-src="images/svg/users-1.svg" class="gender"></md-icon>
+          <md-select name="type" ng-model="type" required>
+            <md-option value="male">male</md-option>
+            <md-option value="female">female</md-option>
+          </md-select>
+        </md-input-container>
+      </div>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Company</label>
+        <md-icon md-svg-src="images/svg/company.svg" class="company"></md-icon>
+        <input md-maxlength="50" required name="company" ng-model="company" type="text" />
+          <div ng-messages="userForm.company.$error">
+            <div ng-message="required">Company is required.</div>
+            <div ng-message="md-maxlength">The Company Name is to be provided</div>
+          </div>
+      </md-input-container>  
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Email</label>
+        <md-icon md-svg-src="images/svg/email-4.svg" class="email"></md-icon>
+        <input required type="email" name="email" ng-model="email"
+               minlength="10" maxlength="100" ng-pattern="/^.+@.+\..+$/" />
+
+        <div ng-messages="userForm.email.$error" role="alert">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">
+           Your email must be between 10 and 100 characters long and look like an e-mail address.
+          </div>
+        </div>
+      </md-input-container>
+
+      <md-input-container class="md-icon-float md-block">
+        <label>Contact No.</label>
+        <md-icon md-svg-src="images/svg/phone.svg" class="phone"></md-icon>
+          <input name="phone" ng-model="phone" required minlength="10" maxlength="10" ng-pattern="/^[1-9]{1}[0-9]{9}$/">
+          <div ng-messages="userForm.phone.$error" ng-hide="showHints">
+          <div ng-message-exp="['required', 'minlength', 'maxlength', 'pattern']">########## - Please enter a valid phone number.</div>
+          </div>
+      </md-input-container>
+
+      <div layout="row" layout-align="end end">
+       <a href="#/employeeAdded"> <md-button class="md-raised md-primary" type="submit" ng-click="addFunction()">Submit</md-button></a>
+      </div>
+
+      <!-- <p style="font-size:.8em; width: 100%; text-align: center;">
+        Make sure to include <a href="https://docs.angularjs.org/api/ngMessages" target="_blank">ngMessages</a> module when using ng-message markup.
+      </p> -->
+    </form>
+  </md-content>
+</div>

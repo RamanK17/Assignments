@@ -1,0 +1,32 @@
+<div ng-cloak="">
+  <md-content class="md-padding" >
+	<div  layout="row" layout-wrap layout-align="center center">
+	  <md-card flex-xs="90" flex-sm="90" flex="30" dir-paginate="x in details|itemsPerPage:itemsPerPage" total-items="total_count" id="mainCards">  
+		<md-card-content >
+		<span class="md-headline"><strong>Employee Details</strong></span>	
+		<br><br>
+			<strong>Employee Id</strong> :{{x.id}}<br>
+			<strong>Name</strong> :{{x.name}}<br>
+			<strong>Age</strong>  :{{x.age}}<br>
+			<strong>Gender</strong>:{{x.gender}}<br>
+			<strong>Company</strong> :{{x.company}}<br>
+			<strong>Email</strong>  :{{x.email}}<br>
+			<strong>Contact No.</strong> :{{x.phone}}<br>
+		</md-card-content>
+		<md-card-actions layout="row" layout-align="end center">
+		   <p>
+			   <md-icon ui-sref="employeeEditDetails/{{x.id}}" md-svg-src="images/svg/edit.svg" ></md-icon>
+			   <md-icon ui-sref="employeeDeleteDetails/{{x.id}}" md-svg-src="images/svg/trash.svg"></md-icon>
+		   </p>
+		</md-card-actions>
+	  </md-card>
+
+	  <div layout="row" layout-wrap layout-align="start end" id="paginationBar">
+		<dir-pagination-controls
+		max-size="10"
+		direction-links="true"
+		boundary-links="true"
+		on-page-change="getData(newPageNumber)" layout-align="end end">
+		</dir-pagination-controls> 
+	  </div>     
+</div>  
