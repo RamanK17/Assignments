@@ -1,0 +1,26 @@
+<div ng-cloak="">
+  <md-content class="md-padding" >
+	<div layout="row" layout-wrap layout-align="center center" id="cardHeights">
+	  <md-card flex-xs="80" flex-sm="80" flex="40" id="movieCard">  
+		<md-card-content >
+			<img ng-src="{{ myDetails.Poster }}" class="md-card-image" alt="Movie Image" flex-xs="90" flex-sm="90" flex="90" id="movieImg"><br>
+		</md-card-content>  
+	  </md-card>
+	  <md-card flex-xs="80" flex-sm="80" flex="50" id="movieCard" >  
+		<md-card-content >
+			<strong>Title</strong> : {{ myDetails.Title }}<br>
+			<strong>Year</strong> : {{ myDetails.Year }}<br>
+			<strong>Language</strong> : {{myDetails.Language}}<br>
+			<strong>Actors</strong> : {{myDetails.Actors}}<br>
+			<strong>Director</strong> : {{myDetails.Director}}<br>
+			<strong>Writer</strong> : {{myDetails.Writer}}<br>
+			<strong>Awards</strong> : {{myDetails.Awards}}<br>
+			<strong>Released</strong> : {{myDetails.Released}}<br><br>
+			<strong>Brief : {{ myDetails.Plot }}</strong>
+		</md-card-content>
+		 <md-card-actions layout="row" layout-align="end center">
+		 <a href="#/searchDetails/{{movieName}}" ><md-icon md-svg-src="images/svg/back-4.svg" id="back"></md-icon></a>
+		</md-card-actions>  
+	  </md-card>
+
+   </div>  

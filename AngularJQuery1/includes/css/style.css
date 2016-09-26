@@ -1,0 +1,50 @@
+md-toolbar-tools{
+	height: 40px;
+}
+md-icon {
+	height: 30px;
+	width: 30px;
+}
+md-card-content{
+	font-family: 'Philosopher', sans-serif;
+	font-size: 24px;
+}
+h3{
+	 margin-left: 20px;
+}
+a{
+	text-decoration: none;
+}
+#head{
+	background-color: #0075C4;
+}
+#input{
+	margin-top: 80px;
+	font-size: 30px;
+}
+#paginationBar{
+ align-self: flex-end;
+}
+#mainCards{
+	color: #BF1363;
+	height: 670px;
+	width: 350px;
+}
+#movieCard{
+	width: 300px;
+}
+#movieImg{
+	width: 350px;
+}
+.heading{
+	margin-left: 5px;
+	font-family: 'Lobster', sans-serif;
+	font-size: 40px;
+	padding-bottom:8px;
+}
+#plot{
+	font-family: 'Philosopher', sans-serif;
+	font-size: 18px;
+}
+
+

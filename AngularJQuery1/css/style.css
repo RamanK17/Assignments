@@ -1,0 +1,106 @@
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+  
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+
+md-toolbar-tools{
+  height: 40px;
+}
+#head{
+  background-color: #0075C4;
+}
+#input{
+  margin-top: 80px;
+  font-size: 30px;
+}
+#paginationBar{
+ align-self: flex-end;
+}
+md-icon {
+  height: 30px;
+  width: 30px;
+}
+h3{
+   margin-left: 20px;
+}
+a{
+  text-decoration: none;
+}
+#mainCards{
+  color: #BF1363;
+  height: 670px;
+  width: 350px;
+}
+#movieCard{
+  width: 300px;
+}
+#movieImg{
+  width: 350px;
+}
+.heading{
+margin-left: 5px;
+font-family: 'Lobster', sans-serif;
+font-size: 40px;
+padding-bottom:8px;
+}
+
+md-card-content{
+font-family: 'Philosopher', sans-serif;
+font-size: 24px;
+}
+#plot{
+font-family: 'Philosopher', sans-serif;
+font-size: 18px;
+ }
+/* --------------------------------------
+   Navbar
+   -------------------------------------- 
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+
+/* Large desktop */
+@media (min-width: 1200px) {
+
+
+}
+@media (max-width: 1440px) {
+
+}
+@media (max-width: 1024px) {
+
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+
+}
+@media (max-width: 480px) {
+
+
+}
+/* Portrait & landscape phone */
+@media (max-width: 320px) {
+ */ 
+   
+}
+@media (max-width: 285px) {
+
+
+}
+

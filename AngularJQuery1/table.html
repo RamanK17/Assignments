@@ -1,0 +1,29 @@
+<div ng-cloak="">
+  <md-content class="md-padding" >
+	<div  layout="row" layout-wrap layout-align="center center">
+	  <md-card flex-xs="80" flex-sm="80" flex="30" dir-paginate="x in myMovie|itemsPerPage:itemsPerPage" total-items="total_count" id="mainCards">  
+		<md-card-title>
+		  <md-card-title-text>
+			<span class="md-headline"><strong>{{x.Title}}</strong></span><br>
+			<img ng-src="{{ x.Poster }}" class="md-card-image" alt="Movie Image" flex-xs="90" flex-sm="90" flex="80" id="card-img">
+		  </md-card-title-text>
+		</md-card-title>
+		<md-card-content >	
+			<strong>Title</strong> :{{x.Title}}<br>
+			<strong>Year</strong>  :{{x.Year}}<br>
+			<strong>imdbID</strong>:{{x.imdbID}}<br>
+		</md-card-content>
+		<md-card-actions layout="row" layout-align="end center">
+		  <a href="#/movieDetails/{{x.imdbID}}"><md-button class="md-raised md-primary">ReadMore<md-icon md-svg-src="images/svg/next-2.svg"></md-icon></md-button></a>
+		</md-card-actions>
+	  </md-card>
+
+	  <div layout="row" layout-wrap layout-align="end" id="paginationBar">
+		<dir-pagination-controls
+		max-size="10"
+		direction-links="true"
+		boundary-links="true"
+		on-page-change="getData(newPageNumber)">
+		</dir-pagination-controls> 
+	  </div>     
+ </div>  
